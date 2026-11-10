@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4d87b6 0%, #515ad6 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box;
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; 
+    background: #71b3da;
+    padding: 30px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: #151735;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.form-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form input, form select {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#submitBtn {
+    background: linear-gradient(135deg, #0000cc, #3366ff);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 204, 0.2);
+}
+
+#submitBtn:hover {
+    background: linear-gradient(135deg, #33ad3e, #138358);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 204, 0.35);
+}
+
+#cancelBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+#cancelBtn.hidden {
+    display: none;
+}
+
+.message {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #0c49ff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management</h1>
+        
+        <div class="form-container">
+            <form id="studentForm">
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="Student name" required>
+                <label>Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <select id="program" required>
+                    <option value="" disabled selected>Select program</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSIS">BSIS</option>
+                    <option value="BSCS">BSCS</option>
+                </select>
+                <button type="submit" id="submitBtn">Add Student</button>
+                <button type="button" id="cancelBtn" class="hidden" onclick="resetForm()">Cancel</button>
+            </form>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Program</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
